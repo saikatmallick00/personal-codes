@@ -1,21 +1,32 @@
 #include <stdio.h>
 int main(){
-    int n,r,s=0;
-    printf("\nenter a numbr");
-    scanf("%d", &n);
-    while (n>0)
-    {
-        r=n%10;
-        s=s+(r*r*r);
-        n=n/10;
-        if (s=n)
-        {
-            printf("%d is an amstrong number",n);
-        }else
-        {
-            printf("%d is not an amstrong number",n);
-        }
+    int e,a,b,i=0,r=0,s,z,x,j;
+    printf("\nEnter the number:");
+    scanf("%d",&e);
+    b=e;
+    a=e;
+    while (a > 0){ 
+        a/=10;
+        i++;
     }
-
-return 0;
+    z=e;
+    while(z!=0){
+        s=z%10;
+        x=1;
+        j=0;
+        while(j<i){
+            x*=s;
+            j++;
+        }
+        r+=x;
+        z/=10;
+    }
+    if (r==b)
+    {
+        printf("%d is an Armstrong number",b);
+    }else
+    {
+        printf("%d is not an Armstrong number",b);
+    }
+    return 0;
 }
