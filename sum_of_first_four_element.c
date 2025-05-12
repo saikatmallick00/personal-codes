@@ -4,10 +4,10 @@ int main(){
     printf("\n enter eliment size:");
     scanf("%d",&n);
     for(i=0;i<n;i++){
-        printf("\nenter element\n");
+        printf("\nenter element: ");
         scanf("%d",&a[i]);
 }
-        while(temp<=3 )
+        while(temp<3)
         {
             sum=sum+a[temp];
             temp++;
