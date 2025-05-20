@@ -3,7 +3,7 @@ int total(int,int,int,int,int);
 int percentage(int,int,int,int,int);
 int s,c;
 int main(){
-    int a,b,c,d,e,num1,num2,num3,num4,num5,result1,result2;
+    int a,b,c,d,e,result1,result2;
     printf("\nEnter The first subject marks out of 100: ");
     scanf("%d",&a);
     printf("\nEnter The second subject marks out of 100: ");
@@ -20,11 +20,11 @@ int main(){
     printf("\nThe percentage of aggregate marks of given subjects are: %d",result2);
     return 0;
 }
-int total(num1,num2,num3,num4,num5){
+int total(int num1,int num2,int num3,int num4,int num5){
     s=num1+num2+num3+num4+num5;
     return s;
 }
-int percentage(num1,num2,num3,num4,num5){
+int percentage(int num1,int num2,int num3,int num4,int num5){
     c=s/5;
     return c;
 }
